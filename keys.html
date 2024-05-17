@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keys.css">
+    <script src="key.js"></script>
+    <title>Keyboard</title>
+</head>
+<body>
+
+    <div class="keyboard">
+            <div class="input">
+                <textarea name="input" id="input" onfocus="inputt()"></textarea>
+                <!-- <div id="input">
+                    uhyughutht
+                </div> -->
+
+                <div id="three" onclick="show()">
+                    <svg width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                      </svg>
+                </div>
+
+                <div id="accessibility">
+                    <div class="voice_assistance">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </div>
+            
+                    <div class="setting">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                          </svg>                
+                    </div>
+            
+                    <div class="customize">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                          </svg>
+                    </div>
+            
+                    <div class="clipboard">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                          </svg>
+                    </div>
+            
+                </div>
+
+            </div>
+
+            <div class="keys">
+                <audio id="key_sound">
+                    <source src="./send.mp3" type="audio/mpeg">
+                </audio>
+                <div class="upper">
+                    <div class="numbers">
+                        <input type="button" value="1" onclick="input.value += '1'; play()">
+                        <input type="button" value="2" onclick="input.value += '2'; play()">
+                        <input type="button" value="3" onclick="input.value += '3'; play()">
+                        <input type="button" value="4" onclick="input.value += '4'; play()">
+                        <input type="button" value="5" onclick="input.value += '5'; play()">
+                        <input type="button" value="6" onclick="input.value += '6'; play()">
+                        <input type="button" value="7" onclick="input.value += '7'; play()">
+                        <input type="button" value="8" onclick="input.value += '8'; play()">
+                        <input type="button" value="9" onclick="input.value += '9'; play()">
+                        <input type="button" value="0" onclick="input.value += '0'; play()">
+                    </div>
+                </div>
+
+                <div class="first_row">
+                    <input type="button" value="Q" onclick="input.value += 'Q'; play()" id="q">
+                    <input type="button" value="W" onclick="input.value += 'W'; play()" id="w">
+                    <input type="button" value="E" onclick="input.value += 'E'; play()" id="e">
+                    <input type="button" value="R" onclick="input.value += 'R'; play()" id="r">
+                    <input type="button" value="T" onclick="input.value += 'T'; play()" id="t">
+                    <input type="button" value="Y" onclick="input.value += 'Y'; play()" id="y">
+                    <input type="button" value="U" onclick="input.value += 'U'; play()" id="u">
+                    <input type="button" value="I" onclick="input.value += 'I'; play()" id="i">
+                    <input type="button" value="O" onclick="input.value += 'O'; play()" id="o">
+                    <input type="button" value="P" onclick="input.value += 'P'; play()" id="p">
+                </div>
+
+                <div class="second_row">
+                    <input type="button" value="A" onclick="input.value += 'A'; play()" id="a">
+                    <input type="button" value="S" onclick="input.value += 'S'; play()" id="s">
+                    <input type="button" value="D" onclick="input.value += 'D'; play()" id="d">
+                    <input type="button" value="F" onclick="input.value += 'F'; play()" id="f">
+                    <input type="button" value="G" onclick="input.value += 'G'; play()" id="g">
+                    <input type="button" value="H" onclick="input.value += 'H'; play()" id="h">
+                    <input type="button" value="J" onclick="input.value += 'J'; play()" id="j">
+                    <input type="button" value="K" onclick="input.value += 'K'; play()" id="k">
+                    <input type="button" value="L" onclick="input.value += 'L'; play()" id="l">
+                </div>
+
+                <div class="third_row">
+                    <input type="button" id="alpha" value="^" onclick="caps()">
+                    <input type="button" value="Z" onclick="input.value += 'Z'; play()" id="z">
+                    <input type="button" value="X" onclick="input.value += 'X'; play()" id="x key">
+                    <input type="button" value="C" onclick="input.value += 'C'; play()" id="c key">
+                    <input type="button" value="V" onclick="input.value += 'V'; play()" id="v key">
+                    <input type="button" value="B" onclick="input.value += 'B'; play()" id="b">
+                    <input type="button" value="N" onclick="input.value += 'N'; play()" id="n">
+                    <input type="button" value="M" onclick="input.value += 'M'; play()" id="m">
+                    <input type="button" id="del" value="X" onclick="input.value = input.value.toString().slice(0, -1)">
+                </div>
+
+                <div class="bottom">
+                    <div id="emoji" onclick="play()">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                        </svg>
+                    </div>
+                    <input type="button" value="." class="punc" onclick="input.value  += '.'; play()">
+                    <input type="button" id="spacebar" onclick="input.value += ' '">
+                    <input type="button" value="," class="punc" onclick="input.value  += ','; play()">
+                    <div id="enter">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-arrow-up-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1H3.707l10.147 10.146a.5.5 0 0 1-.708.708L3 3.707V8.5a.5.5 0 0 1-1 0v-6z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-attachment: local;
+    height: 100vh;
+}
+.keyboard{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    bottom: 0;
+    padding-block: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+    box-shadow: 0px -1px 5px rgb(200, 200, 200);
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    max-height: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+#input {
+    width: 100%;
+    height: 20px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#input:focus{
+    box-shadow: 0px 0px 5px rgb(220, 220, 220);
+    width: 100%;
+}
+
+#three{
+    transition: all ease 300ms;
+}
+
+#accessibility{
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    width: max-content;
+    top: -50%;
+    margin-bottom: 160px;
+    border-radius: 20px;
+    gap: 10px;
+    right: 15%;
+    background-color: rgb(200, 200, 200, 0.366); 
+    transition: all ease-in 500ms;
+    user-select: none;
+    align-items: center;
+    transition: all ease-in 500ms;
+    float: right;
+    z-index: 999;
+    box-shadow: 0px 0px 3px rgb(190, 190, 190);
+}
+
+.clipboard, .setting, .voice_assistance, .customize{
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+
+.keys{
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_row *, .second_row *, .third_row *, .numbers *, .punc, .bi-emoji-smile, .bi-arrow-up-left{
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+.first_row *:active, .second_row *:active, .third_row *:active, .bottom *:active, .numbers *:active, .clipboard:active, .setting:active, .voice_assistance:active, .customize:active, .clipboard:hover, .setting:hover, .voice_assistance:hover, .customize:hover, .bi-arrow-up-left:active,  .bi-emoji-smile:active{
+    box-shadow: 0px 0px 3px rgb(100, 100, 100, 0.5);
+    font-weight: bold;
+    scale: 101%;
+}
+.first_row, .third_row, .upper,.numbers, .bottom{
+    display: flex;    
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 6px;
+}
+.second_row{
+    display: flex;    
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10.5px;
+}
+#alpha{
+    width: 48px;
+}
+#del{
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(200, 200, 200);
+    color: rgb(250, 10, 10);
+    font-weight: bolder;
+    width: 48px;
+}
+#del:active{
+    background-color: rgb(255, 0, 0, 0.4);
+    color: white;
+}
+#spacebar{
+    width: 55%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+</style>
+
+<script>
+    
+    const three = document.getElementById('three');
+    const acc = document.getElementById('accessibility');
+
+    function show() {
+        acc.style.display = 'flex';
+        acc.style.height = 'auto';
+        acc.style.opacity= '1';
+        three.style.display = 'none';
+};
+function inputt() {
+        acc.style.opacity='0';
+        acc.style.display = 'none';
+        three.style.display = 'block';
+}
+    function play() {
+        const sound = document.getElementById('key_sound');
+        const inpt = document.getElementById('input');
+
+        sound.currentTime = 0;
+        sound.play();
+};
+
+
+</script>
+</html>

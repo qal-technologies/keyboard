@@ -1,0 +1,138 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.keyboard{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    bottom: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+    box-shadow: 0px -1px 5px rgb(200, 200, 200);
+}
+
+.input{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    max-height: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    position: sticky;
+}
+
+input#input {
+    width: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+}
+input#input:focus{
+    box-shadow: 0px 0px 5px rgb(210, 210, 210);
+}
+
+#accessibility{
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    width: max-content;
+    top: -50%;
+    margin-bottom: 160px;
+    border-radius: 20px;
+    gap: 10px;
+    right: 15%;
+    background-color: rgb(200, 200, 200, 0.366); 
+    transition: all ease-in 500ms;
+    user-select: none;
+    align-items: center;
+    transition: all ease-in 500ms;
+    float: right;
+    z-index: 999;
+    box-shadow: 0px 0px 3px rgb(190, 190, 190);
+}
+
+.clipboard, .setting, .voice_assistance, .customize{
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+
+.keys{
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_row *, .second_row *, .third_row *, .numbers *, .punc, .bi-emoji-smile, .bi-arrow-up-left{
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(200, 200, 200);
+}
+.first_row *:active, .second_row *:active, .third_row *:active, .bottom *:active, .numbers *:active, .clipboard:active, .setting:active, .voice_assistance:active, .customize:active, .clipboard:hover, .setting:hover, .voice_assistance:hover, .customize:hover, .bi-arrow-up-left:active,  .bi-emoji-smile:active{
+    box-shadow: 0px 0px 3px rgb(100, 100, 100, 0.5);
+    font-weight: bold;
+    scale: 101%;
+}
+.first_row, .third_row, .upper,.numbers, .bottom{
+    display: flex;    
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 6px;
+}
+.second_row{
+    display: flex;    
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 10.5px;
+}
+#alpha{
+    width: 48px;
+}
+#del{
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(200, 200, 200);
+    color: rgb(250, 10, 10);
+    font-weight: bolder;
+    width: 48px;
+}
+#del:active{
+    background-color: rgb(255, 0, 0, 0.4);
+    color: white;
+}
+#spacebar{
+    width: 55%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    background-color: rgb(200, 200, 200);
+} */
